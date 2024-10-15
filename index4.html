@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Rental & Buy/Sell</title>
+    <link rel="stylesheet" href="style5.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<header>
+    <nav>
+        <div class="logo">
+            <h1>RealEstate Hub</h1>
+        </div>
+        <ul>
+            <li><a href="index4.html">Home</a></li>
+            <!-- <li><a href="#">My Profile</a></li> -->
+            <li><a href="index.html">Log Out</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Filter Panel -->
+<div class="panel">
+    <div class="nav-filter">
+        <form action="filter.php" method="post">
+            <input type="text" name="location" placeholder="Enter Location" class="filter-input">
+            
+            <select name="apartment_type" class="filter-select">
+                <option value="">Select Apartment Type</option>
+                <option value="Luxury Apartment">Luxury Apartment</option>
+                <option value="Family House">Family House</option>
+                <option value="Modern Condo">Modern Condo</option>
+            </select>
+            
+            <input type="number" name="rent" placeholder="Maximum Rent" class="filter-input">
+            
+            <button type="submit" class="filter-btn">
+                <i class="fa-solid fa-filter"></i> Filter
+            </button>
+        </form>
+    </div>
+</div>
+
+<!-- Property Listings Section -->
+<section class="properties">
+    <div class="property-list">
+        <div class="property-item">
+            <a href="property1.html">
+                <img src="p20.jpeg">
+                <h3>Luxury Apartment</h3>
+                <p>$1200/month | 2 Beds, 2 Baths</p>
+            </a>
+        </div>
+        <div class="property-item">
+            <a href="pr2.html">
+                <img src="p2.jpeg" >
+                <h3>Family House</h3>
+                <p>$300,000 | 4 Beds, 3 Baths</p>
+            </a>
+        </div>
+        <div class="property-item">
+            <a href="pr3.html">
+                <img src="p3.jpeg" >
+                <h3>Modern Condo</h3>
+                <p>$950/month | 1 Bed, 1 Bath</p>
+            </a>
+        </div>
+        <div class="property-item">
+            <a href="pr4.html">
+                <img src="p4.jpeg" >
+                <h3>Luxury Apartment</h3>
+                <p>$1200/month | 2 Beds, 2 Baths</p>
+            </a>
+        </div>
+        <div class="property-item">
+            <a href="pr5.html">
+                <img src="p5.jpeg" >
+                <h3>Family House</h3>
+                <p>$300,000 | 4 Beds, 3 Baths</p>
+            </a>
+        </div>
+        <div class="property-item">
+            <a href="pr6.html">
+                <img src="p6.jpeg" >
+                <h3>Modern Condo</h3>
+                <p>$950/month | 1 Bed, 1 Bath</p>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section class="contact">
+    <h2>Contact Us</h2>
+    <p>Have questions or need help? Get in touch with us!</p> <br>
+    <a href="#" class="contact-btn">Contact Now</a>
+</section>
+
+<footer>
+    <p>&copy; 2024 Realestate. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

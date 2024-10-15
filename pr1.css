@@ -1,0 +1,153 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navigation Bar */
+header {
+    background-color: #003366;
+    padding: 15px 0;
+    color: #fff;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a.btn {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+nav ul li a.btn:hover {
+    background-color: #e65c00;
+}
+
+/* Property Details Section */
+.property-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+}
+
+.property-image img {
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 50px;
+}
+
+.property-info {
+    max-width: 500px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.property-info h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #003366;
+}
+
+.property-info p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.property-info strong {
+    font-weight: bold;
+}
+
+/* Contact Section */
+.contact {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #003366;
+    color: #fff;
+}
+
+.contact h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.contact-btn {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.contact-btn:hover {
+    background-color: #e65c00;
+}
+
+/* Footer */
+footer {
+    padding: 20px 0;
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+}
+/* Rent Now Button */
+.rent-btn {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.rent-btn:hover {
+    background-color: #e65c00;
+}

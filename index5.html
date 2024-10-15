@@ -1,0 +1,41 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rent Property</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Rent Property: <?php echo $property['title']; ?></h1>
+    </header>
+
+    <section>
+        <form method="POST" action="process_rental.php">
+            <input type="text" name="property_id" placeholder="Enter Property Id">
+            <input type="text" name="S_id" placeholder="Enter Seller ID">
+            <input type="text" name="B_id" placeholder="Enter Buyer ID">
+
+            <div class="form-group">
+                <label for="start_date">Start Date:</label>
+                <input type="date" id="start_date" name="start_date" required>
+            </div>
+
+            <div class="form-group">
+                <label for="end_date">End Date:</label>
+                <input type="date" id="end_date" name="end_date" required>
+            </div>
+
+            
+
+            <button type="submit">Submit Rental Agreement</button>
+        </form>
+        <!-- <div class="seller_id">
+            <a href="payment.html">Go to Payment</a>
+        </div> -->
+    </section>
+</body>
+</html>

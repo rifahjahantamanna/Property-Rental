@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style4.css"> <!-- Link to external CSS -->
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>RealEstate Hub</h1>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Buy</a></li>
+                <li><a href="#">Rent</a></li>
+                <li><a href="#">Sell</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="signup-section">
+        <div class="signup-box">
+            <h2>Sign Up</h2>
+            <form action="connect.php" method="POST"> <!-- Form submits data to signup_process.php -->
+                <div class="input-box">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="input-box">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+
+                <div class="input-box">
+                    <label for="mail">Personal Mail</label>
+                    <input type="text" id="mail" name="mail" required>
+                </div>
+                <div class="input-box">
+                    <label for="phone">Mobile Number</label>
+                    <input type="phone" id="phone" name="phone" required>
+                </div>
+                <button type="submit" class="signup-btn">Sign Up</button>
+            </form>
+            <p>Already have an account? <a href="index2.html">Log in here</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Abdul Hye. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

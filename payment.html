@@ -1,0 +1,130 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Entry</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        h1 {
+            color: #4CAF50;
+        }
+
+        form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        label {
+            margin-top: 10px;
+            display: block;
+            font-weight: bold;
+        }
+
+        input, select {
+            margin: 5px 0 15px 0;
+            padding: 10px;
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box; /* Ensures padding does not affect total width */
+        }
+
+        button {
+            padding: 10px 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            color: #333;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9; /* Light grey for even rows */
+        }
+
+        tr:hover {
+            background-color: #f1f1f1; /* Light grey on hover */
+        }
+    </style>
+</head>
+<body>
+
+<h1>Payment Entry</h1>
+
+<form action="payconnect.php" id="paymentForm" action="" method="post">
+    <label for="P_id">Property ID:</label>
+    <input type="number" id="P_id" name="P_id" required>
+
+    <label for="Payment_id">Payment ID:</label>
+    <input type="number" id="Payment_id" name="Payment_id" required>
+
+    <label for="Amount">Amount:</label>
+    <input type="number" id="Amount" name="Amount" required>
+
+    <label for="Method_type">Payment Method:</label>
+    <select id="Method_type" name="Method_type" required>
+        <option value="">Select Method</option>
+        <option value="Credit Card">Credit Card</option>
+        <option value="Debit Card">Debit Card</option>
+        <option value="PayPal">PayPal</option>
+        <option value="Bank Transfer">Bank Transfer</option>
+    </select>
+
+    <label for="Status">Status:</label>
+    <select id="Status" name="Status" required>
+        <option value="">Select Status</option>
+        <option value="Completed">Completed</option>
+        <option value="Pending">Pending</option>
+        <option value="Failed">Failed</option>
+    </select>
+
+    <label for="s_id">Seller ID:</label>
+    <input type="number" id="s_id" name="s_id" required>
+
+    <label for="b_id">Buyer ID:</label>
+    <input type="number" id="b_id" name="b_id" required>
+
+    <button type="submit">Submit Payment</button>
+</form>
+
+
+
+
+</body>
+</html>
